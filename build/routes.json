@@ -19134,6 +19134,30 @@
   },
   "btbtla": {
     "routes": {
+      "/detail/:name": {
+        "path": "/detail/:name",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/btbtla/detail/雍正王朝",
+        "parameters": {
+          "name": "电影 | 电视剧名称"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": true,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "BTBTLA | 指定剧名",
+        "maintainers": [
+          "Hermes1030"
+        ],
+        "location": "detail.ts",
+        "module": "() => import('@/routes/btbtla/detail.ts')"
+      },
       "/gxlist": {
         "categories": [
           "multimedia"
@@ -19142,7 +19166,7 @@
         "maintainers": [
           "Hermes1030"
         ],
-        "name": "BTBTLA",
+        "name": "BTBTLA | 最近更新",
         "path": "/gxlist",
         "url": "btbtla.com/tt/gxlist.html",
         "location": "gxlist.ts",
@@ -19151,8 +19175,8 @@
     },
     "name": "BT影视",
     "apiRoutes": {},
-    "url": "btbtla.com",
-    "description": "BT影视更新列表"
+    "url": "www.btbtla.com",
+    "description": "BT影视的页面内容，最近更新列表，视频种子列表。"
   },
   "btzj": {
     "routes": {
